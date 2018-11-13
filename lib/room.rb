@@ -1,16 +1,9 @@
 class Room
-  # attr_reader attributes
+  attr_reader :capacity, :occupants
+
   def initialize(capacity)
     @capacity = capacity
     @occupants = []
-  end
-
-  def capacity
-    @capacity
-  end
-
-  def occupants
-    @occupants
   end
 
   def full?
@@ -26,5 +19,4 @@ class Room
     @occupants << name
     true
   end
-
 end
